@@ -42,12 +42,12 @@
     ("zenburn-bg-2"     . "#000000")
     ("zenburn-bg-1"     . "#2B2B2B")
     ("zenburn-bg-05"    . "#383838")
-    ("zenburn-bg"       . "#3F3F3F")
+    ("zenburn-bg"       . "#2A2A2A")
     ("zenburn-bg+1"     . "#4F4F4F")
     ("zenburn-bg+2"     . "#5F5F5F")
     ("zenburn-bg+3"     . "#6F6F6F")
     ("zenburn-red+1"    . "#DCA3A3")
-    ("zenburn-red"      . "#CC9393")
+    ("zenburn-red"      . "#C98A8B")
     ("zenburn-red-1"    . "#BC8383")
     ("zenburn-red-2"    . "#AC7373")
     ("zenburn-red-3"    . "#9C6363")
@@ -144,7 +144,7 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((t (:foreground ,zenburn-green-1
                       :background ,zenburn-bg-05
                       :box (:line-width -1 :style released-button)))))
-   `(region ((,class (:background ,zenburn-bg-1))
+   `(region ((,class (:background ,zenburn-bg+1))
              (t :inverse-video t)))
    `(secondary-selection ((t (:background ,zenburn-bg+2))))
    `(trailing-whitespace ((t (:background ,zenburn-red))))
@@ -510,7 +510,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; magit
    `(magit-section-title ((t (:foreground ,zenburn-yellow :weight bold))))
    `(magit-branch ((t (:foreground ,zenburn-orange :weight bold))))
-   `(magit-item-highlight ((t (:background ,zenburn-bg+1 :bold nil))))
+   `(magit-item-highlight ((t (:background ,zenburn-bg-1 :bold nil))))
 ;;;;; egg
    `(egg-text-base ((t (:foreground ,zenburn-fg))))
    `(egg-help-header-1 ((t (:foreground ,zenburn-yellow))))
